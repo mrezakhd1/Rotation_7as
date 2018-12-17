@@ -93,8 +93,6 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
 	Stepper(stepsPerRevolution);
-	setSpeed(80);
-	step(25); //Calibrate
 	HAL_Delay(50);
 	step(-15);
   /* USER CODE END 2 */
