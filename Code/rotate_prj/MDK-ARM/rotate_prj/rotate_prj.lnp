@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"rotate_prj\system_stm32f0xx.o"
+"rotate_prj\startup_stm32f030x6.o"
+"rotate_prj\stm32f0xx_hal_msp.o"
+"rotate_prj\main.o"
+"rotate_prj\stm32f0xx_it.o"
+"rotate_prj\stepper_conf.o"
+"rotate_prj\stm32f0xx_hal_gpio.o"
+"rotate_prj\stm32f0xx_hal_i2c_ex.o"
+"rotate_prj\stm32f0xx_hal_pwr_ex.o"
+"rotate_prj\stm32f0xx_hal_flash.o"
+"rotate_prj\stm32f0xx_hal_tim.o"
+"rotate_prj\stm32f0xx_hal.o"
+"rotate_prj\stm32f0xx_hal_flash_ex.o"
+"rotate_prj\stm32f0xx_hal_tim_ex.o"
+"rotate_prj\stm32f0xx_hal_rcc.o"
+"rotate_prj\stm32f0xx_hal_pwr.o"
+"rotate_prj\stm32f0xx_hal_rcc_ex.o"
+"rotate_prj\stm32f0xx_hal_dma.o"
+"rotate_prj\stm32f0xx_hal_i2c.o"
+"rotate_prj\stm32f0xx_hal_cortex.o"
+--library_type=microlib --strict --scatter "rotate_prj\rotate_prj.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "rotate_prj.map" -o rotate_prj\rotate_prj.axf
